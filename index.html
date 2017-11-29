@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+        <meta name="keywords" content="fingerprint, lock, fingerprint lock, padlock, sport lock, locker, luggage">
+        <meta name="description" content="Clever is a smart, keyless padlock that opens with your fingerprint. App available free on iOS and Android.">
+
+        <title>Clever Fingerprint Lock</title>
+
+        <!-- CSS -->
+        <link href="css/bootstrap.min.css" rel="stylesheet"> 
+        <link href="css/style.css" rel="stylesheet"> 
+
+        <!-- FONT IMPORT -->
+        <link href="https://fonts.googleapis.com/css?family=Roboto:100" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Titillium+Web:200,300,600" rel="stylesheet">
+
+        <!-- EXTRAS IMPORT -->
+
+        <!-- FAVICON -->
+        <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+
+        <!-- SMOOTH SCROLLING -->
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+
+        <!--        Navbar BG-->
+        <script>
+
+            $(function () {
+                $(document).scroll(function () {
+                    var $nav = $(".navbar-fixed-top");
+                    $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+                });
+            });
+        </script>
+
+        <script>
+            $(document).ready(function(){
+                // Add smooth scrolling to all links
+                $("a").on('click', function(event) {
+
+                    // Make sure this.hash has a value before overriding default behavior
+                    if (this.hash !== "") {
+                        // Prevent default anchor click behavior
+                        event.preventDefault();
+
+                        // Store hash
+                        var hash = this.hash;
+
+                        // Using jQuery's animate() method to add smooth page scroll
+                        // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+                        $('html, body').animate({
+                            scrollTop: $(hash).offset().top
+                        }, 800, function(){
+
+                            // Add hash (#) to URL when done scrolling (default click behavior)
+                            window.location.hash = hash;
+                        });
+                    } // End if
+                });
+            });
+        </script>
+
+
+        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+    </head>
+    <body>
+
+        <!-- NAVIGATION BAR -->
+
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span> 
+                    </button>
+                    <a class="navbar-brand" href="#"><object data="img/clever_logo1.svg" type="image/svg+xml" width="245px"><img class="logowidth" src="img/clever_logo1.png">
+                        </object></a>
+
+                </div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav navbar-right">
+                        <!-- <li class="active"><a href="#">home</a></li> -->
+                        <li><a href="#about">about</a></li>
+                        <li><a id="myBtn" style="cursor: pointer;">contact</a></li> 
+                        <li>
+                            <a href="https://clever-fingerprint-lock.myshopify.com/">shop</a>
+                        </li> 
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- BODY --> 
+
+        <section class="header" id="splash">
+
+            <div id="mission">
+                <h1>No more keys or combinations. Just your fingerprint.</h1>
+
+                <a href="https://www.youtube.com/embed/R6UTV8fD0d8?rel=0"><button>Watch the video >></button></a>
+
+
+            </div>          
+
+            <div id="overlay">
+                <video id="videoelement" poster="img/poster2.jpg" autoplay="true" loop muted>
+                    <source src="clever_bg.mp4" type="video/mp4">
+                    <source src="" type="video/webm">
+                </video>
+            </div>
+
+        </section>
+
+        <!-- FEATURE 1 -->
+
+        <section class="feature-one" id="about">
+            <div class="container">
+                <div class="row" >
+
+                    <div class="col-xs-12">
+
+                        <h3>No more keys or combos. Just your fingerprint.</h3>
+                        <p><strong>Clever</strong> is a smart, keyless padlock that opens and closes with your fingerprint. Just touch the sensor on its face to lock and unlock.
+
+                            Equipped with advanced biometric sensor and Bluetooth technology, you'll never worry about clunky keys or obscure combinations ever again.
+
+                            Clever supports multiple users and fingerprints for shared use and can be charged via micro USB. Setup and configuration is easy with the Clever App—available free on iOS and Android. 
+
+                            <br />
+
+
+
+                            <!--
+<span id="infobuttons">
+<button class="custombtn sm">Tech Specs</button>
+
+&nbsp;
+
+<button class="custombtn sm">FAQ</button>
+</span>
+-->
+
+
+
+                        </p>
+
+
+                    </div>
+
+                </div>
+
+                <!-- Credit to http://www.flaticon.com/ for the icons under CC license. -->
+
+                <div class="row" style="margin-top: 40px">
+
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 blurb ">
+
+                        <object data="img/shiny-diamond.svg" type="image/svg+xml" width="36px">
+                        </object>
+
+                        <h1>STRONG AND BEAUTIFUL</h1>
+                        <p>Premium all-metal unibody construction with stainless steel core and gorgeous anodized aluminum shell.</p>
+
+                    </div>
+
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 blurb ">
+
+                        <object data="img/fingerprint2.svg" type="image/svg+xml" width="36px">
+                        </object>
+
+                        <h1>ADVANCED BIOMETRICS</h1>
+                        <p>State of the art FPC OneTouch® biometric sensor technology accurately verifies your fingerprint in less than a second. 
+                        </p>
+                    </div>
+
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 blurb ">
+
+                        <object data="img/smartphone.svg" type="image/svg+xml" width="36px">
+                        </object>
+
+                        <h1>iOS &amp; ANDROID</h1>
+                        <p>Wireless setup and management is easy using any Bluetooth-enabled iOS or Android device through the official Clever App.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="row" style="margin-top: 10px;">
+
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 blurb clearfix">
+
+                        <object data="img/binary-code.svg" type="image/svg+xml" width="36px" style="opacity: 0.775;">
+                        </object>
+
+                        <h1>DIGITALLY SECURE</h1>
+                        <p>With encrpyted data frames over low-power Bluetooth, only hardware running the official Clever app with authorized users may connect. 
+                        </p>
+                    </div>
+
+
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 blurb  ">
+
+                        <object data="img/team.svg" type="image/svg+xml" width="36px">
+                        </object>
+
+                        <h1>MULTI-USER</h1>
+                        <p>Stores up to 32 fingerprints over 4 users for shared use. Easily manage user permissions and view access history.
+                        </p>
+
+
+                    </div>
+
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 blurb">
+
+                        <object data="img/crop-button.svg" type="image/svg+xml" width="32px" style="padding-top: 4px;">
+                        </object>
+
+                        <h1>SWING SHACKLE</h1>
+                        <p>With a unique Swing Shackle mechanism, Clever can open and close laterally without any vertical displacement. Low profile for tight spaces.
+                        </p>
+
+                    </div>                    
+
+                </div>
+
+                <div id="xsiphone"><img class="visible-xs" src="img/iOSapp_left2.png" width="150px"></div>               
+
+            </div>
+
+        </section>
+
+
+        <div>
+            <div></div>
+            <div></div>
+        </div>
+
+        <!-- FEATURE THREE -->
+
+        <section id="feature-three">
+
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-lg-7 col-md-7 col-sm-6 col-xs-12" id="ftpic-three"></div>
+
+                    <div class="col-lg-5 col-md-5 col-sm-6 col-xs-12" id="">
+                        <!--
+<h1>Versatile, for just about anywhere.</h1>
+<p>With a 5mm diameter shackle and dimensions of 80mm x 40mm x 20mm (including shackle), Clever fits virtually anywhere: travel luggage, gym bags, lockers and more.</p>
+
+<p>FCC compliant, safe for in-flight use and around other electronic devices.
+</p>
+<br />
+
+<p>
+<button class="custombtn" id="buynow">Buy Now</button>
+</p>
+
+-->
+
+
+
+                    </div>
+
+                </div>
+
+
+
+            </div>
+
+
+        </section>
+
+
+
+        <!-- FEATURE TWO -->
+
+        <section id="feature-two">
+
+            <div class="container-fluid">
+                <div class="row" id="">
+
+                    <div class="col-lg-5 col-md-7 col-sm-6 col-xs-12" id="proposition">
+                        <div id="proptext">
+                            <h1>Versatile, for just about anywhere.</h1><br />
+                            <p>With a 5mm diameter shackle and dimensions of 80mm x 40mm x 20mm (including shackle), Clever is sliim fits virtually anywhere: travel luggage, gym bags, lockers and more.</p>
+
+                            <p>Clever is also FCC and IC certified, so it is safe for in-flight use and around your other electronic devices (IC: 22591-305001BF; FCC ID: 2ALPA305001BF).
+                            </p>
+
+                            <!-- <p>
+<a href="https://www.indiegogo.com/projects/clever-fingerprint-lock-security-smart"><button id="buynow">Buy Now</button></a>
+</p> -->
+                        </div>
+
+
+                    </div>
+
+                    <div class="col-lg-7 col-md-5 col-sm-6 col-xs-12" id="ftpic"></div>
+
+                </div>
+
+
+
+            </div>
+
+
+        </section>
+
+
+        <!-- FOOTER -->
+
+
+
+        <section id="footer">
+
+            <div class="container">
+
+                <div class="bottomlogo">
+
+                    <div id="copyright"><span id="copyright">© 2017 Copyright —  Clever</span></div>
+
+                    <div id="socialmedia">
+                        <a href="https://www.facebook.com/cleverlock"><button class="custombtn gray">+Facebook</button></a>&nbsp;
+
+                        <a href="https://twitter.com/cleverlocks"><button class="custombtn gray">+Twitter</button></a>&nbsp;
+
+                        <a href="https://www.instagram.com/cleverlocks/"><button class="custombtn gray">+Instagram</button></a>&nbsp;
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+
+        <!-- CONTACT MODAL BOX -->
+
+        <div id="myModal" class="modal">
+
+            <!-- Modal content -->
+
+            <div class="modal-content"> 
+
+                <span class="close">&times;</span>
+
+                <h2>Contact</h2>
+
+                <form id="ajax-contact" method="post" action="mailer.php">
+
+                    <div class="field">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+
+                    <div class="field">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+
+                    <div class="field">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" required></textarea>
+                    </div>
+
+                    <div class="field" id="sendbutton">
+
+                        <div id="form-messages"></div>
+
+                        <button type="submit">Send</button>
+                    </div>
+
+
+                    <label>info@cleverlock.io</label>
+
+
+                </form>
+
+            </div>
+
+        </div>
+
+
+        <div id="myModal2" class="modal">
+
+            <!-- Modal content -->
+
+            <div class="modal-content"> 
+
+                <span class="close">&times;</span>
+
+                <h2>Video</h2>
+
+
+            </div>
+
+        </div>
+
+
+
+
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/app.js"></script>
+        <script>
+            // Get the modal
+            var modal = document.getElementById('myModal');
+
+            // Get the button that opens the modal
+            var btn = document.getElementById("myBtn");
+
+            // Get the <span> element that closes the modal
+            var span = document.getElementsByClassName("close")[0];
+
+            // When the user clicks on the button, open the modal 
+            btn.onclick = function() {
+                modal.style.display = "block";
+            }
+
+            // When the user clicks on <span> (x), close the modal
+            span.onclick = function() {
+                modal.style.display = "none";
+            }
+
+            // When the user clicks anywhere outside of the modal, close it
+            window.onclick = function(event) {
+                if (event.target == modal) {
+                    modal.style.display = "none";
+                }
+            }
+        </script>
+
+
+    </body>
+</html>
